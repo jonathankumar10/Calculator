@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: grey;
+    height: 100vh;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+.menu{
+    padding-left: 25%;
+}
+
+@keyframes example {
+    0%   {background-color: black;}
+    50%  {background-color: gray;}
+    100% {background-color: black;}
+  }
+
+.container{
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: space-between;
+    padding-top: 15%;
+}
+
+.timer{
+    font-size: 5em;
+    font-weight:initial;
+}
+
+.bottom{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons{
+    width: 300px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.buttons button{
+    width: 80px;
+    height: 80px;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    border-radius: 50%;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+
+}
+
+.buttons #start{
+    transition: all 0.3s ease;
+    background-color: green;
+    z-index: 1;
+}
+
+.buttons#start:active,
+.buttons#lap:active,
+.buttons#reset:active{
+    transform: scale(0.8);
+}
+
+.buttons#start.on{
+    background-color: red;
+}
+
+.buttons #lap,
+.buttons #reset{
+    transition: all 0.3s ease;
+}
+

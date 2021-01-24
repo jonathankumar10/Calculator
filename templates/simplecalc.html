@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.5/dist/css/uikit.min.css" />
+    <link rel="stylesheet" href="../css/introandsimplecalcstyles.css">
+</head>
+
+<body>
+    <nav class="uk-navbar-container menu" uk-navbar>
+        <div class="uk-navbar-left">
+            <ul class="uk-navbar-nav">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./percentagecalc.html">Percentage Calculator</a></li>
+                <li><a href="./simplecalc.html">Simple Calculator</a></li>
+                <li><a href="./stopwatch.html">Stop Watch</a></li>
+                <li><a href="./tempconverter.html">Temperature Converter</a></li>
+
+            </ul>
+        </div>
+    </nav>
+    <div>
+        <h1 id="title">Simple Calculator</h1>
+    </div>
+    <div class="container">
+        <div class="simplecalcmain">
+            <div id="result">
+                <div id='history'>
+                    <p id="historyvalue"></p>
+                </div>
+                <div id="output">
+                    <p id="outputvalue"></p>
+                </div>
+            </div>
+            <div id="keyboard">
+                <button class="operator" id="clear">C</button>
+                <button class="operator" id="backspace">CE</button>
+                <button class="operator" id="%">%</button>
+                <button class="operator" id="/">/</button>
+                <button class="number" id="7">7</button>
+                <button class="number" id="8">8</button>
+                <button class="number" id="9">9</button>
+                <button class="operator" id="*">&times;</button>
+                <button class="number" id="4">4</button>
+                <button class="number" id="5">5</button>
+                <button class="number" id="6">6</button>
+                <button class="operator" id="-">-</button>
+                <button class="number" id="1">1</button>
+                <button class="number" id="2">2</button>
+                <button class="number" id="3">3</button>
+                <button class="operator" id="+">+</button>
+                <button class="empty" id="empty"></button>
+                <button class="number" id="0">0</button>
+                <button class="empty" id="empty"></button>
+                <button class="operator" id="=">=</button>
+            </div>
+
+        </div>
+    </div>
+    <script type="text/javascript" src="../js/simplecalc.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.5/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.5/dist/js/uikit-icons.min.js"></script>
+</body>
+
+</html>

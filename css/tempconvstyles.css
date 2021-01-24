@@ -1,0 +1,78 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: grey;
+    background-image: linear-gradient(white, black);
+}
+
+h1#title{
+    /* color: white; */
+    position: relative;
+    font-size: 50px;
+    text-align: center;
+    text-shadow: 2px 2px 4px #000000;
+    text-align: center;
+}
+
+div.calcFormDiv{
+    height: 88.9vh;
+    padding-top: 2%;
+}
+
+div.celcius{
+    height: 33.33%;
+}
+div.farenheit{
+    height: 33.33%;
+}
+div.kelvin{
+    height: 33.33%;
+}
+
+.farenheit{
+    border-top: 4px gray solid;
+    border-bottom: 4px gray solid;
+}
+
+input[type = number]{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: gray;
+    font-size: 6em;
+    align-items: center;
+    text-align: center;
+    border: 0;
+    outline: none;
+}
+
+::placeholder{
+    color: rgb(43, 43, 43);
+}
+
+.column {
+    float: left;
+  }
+  
+
+.right{
+    width: 30%;
+    height: 90%;
+    text-align: center;
+    font-size: 7em; 
+    background-color: black;
+    color:  rgb(43, 43, 43);
+}
+
+.left{
+    width: 70%;
+    height: 90%;
+}
+
+.menu{
+    padding-left: 25%;
+}

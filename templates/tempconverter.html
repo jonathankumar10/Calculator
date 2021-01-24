@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.5/dist/css/uikit.min.css" />
+    <link rel="stylesheet" href="../css/tempconvstyles.css">
+</head>
+
+<body>
+    <nav class="uk-navbar-container menu" uk-navbar>
+        <div class="uk-navbar-left">
+            <ul class="uk-navbar-nav">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./percentagecalc.html">Percentage Calculator</a></li>
+                <li><a href="./simplecalc.html">Simple Calculator</a></li>
+                <li><a href="./stopwatch.html">Stop Watch</a></li>
+                <li><a href="./tempconverter.html">Temperature Converter</a></li>
+
+            </ul>
+        </div>
+    </nav>
+    <div class="container" id="percentageCalculatorDiv">
+        <div>
+            <h1 id="title">Temperature Converter</h1>
+        </div>
+        <div class="calcFormDiv">
+            <div class="celcius">
+                <div class="column left" id="celciusleft">
+                    <input type="number" placeholder="celcius...">
+                </div>
+
+                <div class="column right"> &deg; C
+                </div>
+            </div>
+
+            <div class="farenheit">
+                <div class="column left" id="farenheitleft">
+                    <input type="number" placeholder="farenheit...">
+                </div>
+                <div class="column right">&deg; F
+                </div>
+            </div>
+            <div class="kelvin">
+                <div class="column left" id="kelvinleft">
+                    <input type="number" placeholder="kelvin...">
+                </div>
+
+
+                <div class="column right"> K
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="../js/tempconv.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.5/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.5/dist/js/uikit-icons.min.js"></script>
+</body>
+
+</html>

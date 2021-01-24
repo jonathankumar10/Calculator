@@ -1,0 +1,205 @@
+
+nav,footer,header{
+    display: block;
+}
+
+.menu{
+    padding-left: 25%;
+}
+
+a:visited, a:hover, a:active, a:focus {
+    text-decoration: none!important;
+    outline: none !important;
+}
+
+body{
+    /* background-color: black; */
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: gray;
+    background-image: linear-gradient(white, black);
+    height: 100vh;
+    /* animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite; */
+}
+/* 
+@keyframes example {
+    0%   {background-color: black;}
+    50%  {background-color: gray;}
+    100% {background-color: black;}
+  } */
+
+div.container{
+    width: 100%;
+    margin-top: 2%;
+}
+
+h1#title{
+    /* color: white; */
+    position: relative;
+    font-size: 50px;
+    text-align: center;
+}
+
+.col-1 {width: 8.33%}
+.col-2 {width: 16.66%}
+.col-3 {width: 25%}
+.col-4 {width: 33.33%}
+.col-5 {width: 41.66%}
+.col-6 {width: 50%}
+.col-7 {width: 58.33%}
+.col-8 {width: 66.66%}
+.col-9 {width: 75%}
+.col-10 {width: 83.33%}
+.col-11 {width: 91.66%}
+.col-12 {width: 100%}
+
+nav{
+    width: 100%;
+    padding: 0;
+}
+
+nav ul.topnav{
+    background-color: lightgray;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul.topnav li{
+    float: left;
+    padding-left:3%;
+    list-style: none;
+}
+
+div#percentageCalculatorDiv{
+    position: relative;
+    width: 100%;
+}
+
+h2.calcheading{
+    float: left;
+    width: 100%;
+    padding-left: 44%;
+}
+
+div.calcFormDiv{
+    width: 100%;
+    float: left;
+    padding-left: 40%;
+}
+
+form.calcForm{
+    padding: 4%;
+}
+
+input[type="text"]{
+    width: 3%;
+}
+
+
+/*  Main Page Background Image CSS */
+div.main_page_back{
+
+    /* background-image: url(./imgs/background590.jpg); */
+    position: relative; 
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.main_page_back::before{
+    content: "";
+    background-image: url(../imgs/background590.jpg);
+    opacity: 0.2;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-size: cover;
+    position: absolute;
+}
+
+
+/* Simple Calc Properties */
+
+#title{
+    text-shadow: 2px 2px 4px #000000;
+    text-align: center;
+}
+
+input.simplecalcbutton{
+    width: 70px;
+    height: 70px;
+    font-size: xx-large;
+    margin: 7%;
+    cursor: pointer;
+}
+
+div.container{
+    width: 100%;
+    align-items: center;
+    padding-left: 25%;
+    padding-top: 1%;
+}
+
+div.simplecalcmain{
+
+    width: 400px;
+    height: 500px;
+    align-items: center;
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    background-color: rgb(177, 177, 177);
+    border-radius: 20px;
+}
+div#result{
+    height: 120px;
+    background-image: linear-gradient(rgb(197, 197, 197), rgb(107, 107, 107));
+    border-radius: 1%;
+}
+
+div#keyboard{
+    height: 400px;
+    background-color: black;
+    background-image: linear-gradient(rgb(56, 56, 56), rgb(8, 8, 8));
+    border-radius: 1%;
+}
+
+div#history{
+    text-align: right;
+    height: 50%;
+    margin: 0 20px;
+    padding-top: 20px;
+    font-size: x-large;
+    color: #919191;
+}
+
+div#output{
+    text-align: right;
+    height: 40%;
+    margin: 10px 20px;
+    font-size: xx-large;
+}
+
+.operator, .empty, .number{
+    width: 17%;
+    height: 11%;
+    margin: 4%;
+    float: left;
+    border-radius: 50%;
+    border-width: 0;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.empty, .number{
+    background-color: rgb(177, 177, 177);
+}
+
+.operator, .number{
+    cursor: pointer;
+}

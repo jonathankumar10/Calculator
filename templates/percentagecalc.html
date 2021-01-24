@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Percentage Calculator</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.5/dist/css/uikit.min.css" />
+    <link rel="stylesheet" href="../css/percentagestyles.css">
+
+</head>
+
+<body>
+    <nav class="uk-navbar-container menu" uk-navbar>
+        <div class="uk-navbar-left">
+            <ul class="uk-navbar-nav">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./percentagecalc.html">Percentage Calculator</a></li>
+                <li><a href="./simplecalc.html">Simple Calculator</a></li>
+                <li><a href="./stopwatch.html">Stop Watch</a></li>
+                <li><a href="./tempconverter.html">Temperature Converter</a></li>
+
+            </ul>
+        </div>
+    </nav>
+    <div class="container" id="percentageCalculatorDiv">
+
+        <div class="calcFormDiv">
+            <div>
+                <h1 id="title">Percentage Calculator</h1>
+            </div>
+            <form class="calcForm" id="xiswhatpercentofy">
+                <input type="text" id="numfield1"> is what % of
+                <input type="text" id="numfield2"> ?
+                <button value="calculate" id="percentbutton1">submit</button>
+            </form>
+            <div id="model1">
+                <div id="model1-content">
+                    <span class="close">&times;</span>
+                    <h3 id="resultfield1" class="result"></h3>
+                </div>
+            </div>
+
+            <form class="calcForm" id="xiswhatyofwhatnumber">
+                <input type="text" id="numfield3"> is what
+                <input type="text" id="numfield4"> % of what number?
+                <button value="calculate" id="percentbutton2">submit</button>
+            </form>
+            <div id="model2">
+                <div id="model2-content">
+                    <span class="close">&times;</span>
+                    <h3 id="resultfield2" class="result"></h3>
+                </div>
+            </div>
+
+            <form class="calcForm" id="whatisxpercentofy">
+                What is
+                <input type="text" id="numfield5"> % of
+                <input type="text" id="numfield6"> ?
+                <button value="calculate" id="percentbutton3">submit</button>
+            </form>
+            <div id="model3">
+                <div id="model3-content">
+                    <span class="close">&times;</span>
+                    <h3 id="resultfield3" class="result"></h3>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <script type="text/javascript" src="../js/percentcalc.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.5/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.5/dist/js/uikit-icons.min.js"></script>
+</body>
+
+</html>
