@@ -1,3 +1,4 @@
+/* for both pages */
 
 nav,footer,header{
     display: block;
@@ -16,66 +17,85 @@ body{
     /* background-color: black; */
     font-family: Arial, Helvetica, sans-serif;
     background-color: gray;
-    background-image: linear-gradient(white, black);
+    background-image: linear-gradient(rgb(15, 17, 22), rgb(255, 255, 255));
     height: 100vh;
-    /* animation-name: example;
-    animation-duration: 4s;
-    animation-iteration-count: infinite; */
 }
-/* 
-@keyframes example {
-    0%   {background-color: black;}
-    50%  {background-color: gray;}
-    100% {background-color: black;}
-  } */
 
 div.container{
     width: 100%;
     margin-top: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+nav.navbar{
+    margin: 0 auto;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+ul.topnav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between ;
+}
+
+ul.topnav li{
+    list-style: none;        
+}
+
+a.class-link, a.dropdown{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}
+
+@media screen and (max-width: 992px) {
+    ul.topnav li a.class-link{
+        display: none;
+    }
+
+    a.dropdown{
+        color: white !important;
+    }
+
+    ul.topnav.responsive li.dropdown{
+        position: absolute;
+
+    }
+
+    ul.topnav.responsive{
+        flex-direction: column;
+        text-align: right;
+    }
+
+    ul.topnav li{
+        position: relative;
+        list-style: none;        
+    }
+
+    ul.topnav.responsive li{
+        position: relative;
+        list-style: none;        
+    }
+
+    ul.topnav.responsive li a{
+        display: block;
+        list-style: none;
+        line-height: 2;
+    }
+ 
+  }
+
 h1#title{
-    /* color: white; */
+    color: white;
     position: relative;
     font-size: 50px;
     text-align: center;
 }
 
-.col-1 {width: 8.33%}
-.col-2 {width: 16.66%}
-.col-3 {width: 25%}
-.col-4 {width: 33.33%}
-.col-5 {width: 41.66%}
-.col-6 {width: 50%}
-.col-7 {width: 58.33%}
-.col-8 {width: 66.66%}
-.col-9 {width: 75%}
-.col-10 {width: 83.33%}
-.col-11 {width: 91.66%}
-.col-12 {width: 100%}
-
-nav{
-    width: 100%;
-    padding: 0;
-}
-
-nav ul.topnav{
-    background-color: lightgray;
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul.topnav li{
-    float: left;
-    padding-left:3%;
-    list-style: none;
-}
-
-div#percentageCalculatorDiv{
-    position: relative;
-    width: 100%;
-}
 
 h2.calcheading{
     float: left;
@@ -122,6 +142,11 @@ div.main_page_back::before{
     position: absolute;
 }
 
+a.cards{
+    border-radius: 20px;
+    font-size: x-large;
+    font-family: monospace;
+}
 
 /* Simple Calc Properties */
 
@@ -138,35 +163,35 @@ input.simplecalcbutton{
     cursor: pointer;
 }
 
-div.container{
-    width: 100%;
-    align-items: center;
-    padding-left: 25%;
-    padding-top: 1%;
-}
-
 div.simplecalcmain{
 
-    width: 400px;
-    height: 500px;
+    width: 90%;
+    height: 100%;
+    margin-left: 5%;
     align-items: center;
     position: relative;
+    justify-content: center;
+    align-items: center;
     border-radius: 5px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,1);
     background-color: rgb(177, 177, 177);
-    border-radius: 20px;
 }
+
+div.card{
+    background-color: gray;
+    background-image: linear-gradient(rgb(49, 49, 54), rgb(255, 255, 255));
+    border: none;
+}
+
 div#result{
     height: 120px;
     background-image: linear-gradient(rgb(197, 197, 197), rgb(107, 107, 107));
-    border-radius: 1%;
 }
 
 div#keyboard{
     height: 400px;
     background-color: black;
     background-image: linear-gradient(rgb(56, 56, 56), rgb(8, 8, 8));
-    border-radius: 1%;
 }
 
 div#history{
@@ -193,7 +218,7 @@ div#output{
     border-radius: 50%;
     border-width: 0;
     font-weight: bold;
-    font-size: x-large;
+    font-size: large;
 }
 
 .empty, .number{

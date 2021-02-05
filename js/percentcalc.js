@@ -1,5 +1,13 @@
 // Percentage Calculator
-
+function toggleDropdown() {
+    let navbarToggle = document.getElementById("navbar-toggle");
+    if (navbarToggle.className == "topnav") {
+        navbarToggle.className += ' responsive';
+    }
+    else {
+        navbarToggle.className = 'topnav';
+    }
+}
 
 var numfield1 = document.getElementById('numfield1');
 var numfield2 = document.getElementById('numfield2');

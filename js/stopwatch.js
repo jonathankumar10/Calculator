@@ -68,3 +68,13 @@ buttonreset.onclick = function () {
     appendminutes.innerHTML = displayminutes;
     appendseconds.innerHTML = displayseconds;
 }
+
+function toggleDropdown() {
+    let navbarToggle = document.getElementById("navbar-toggle");
+    if (navbarToggle.className == "topnav") {
+        navbarToggle.className += ' responsive';
+    }
+    else {
+        navbarToggle.className = 'topnav';
+    }
+}

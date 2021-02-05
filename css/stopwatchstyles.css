@@ -32,6 +32,67 @@ body{
     padding-top: 15%;
 }
 
+nav.navbar{
+    margin: 0 auto;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+ul.topnav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between ;
+}
+
+ul.topnav li{
+    list-style: none;        
+}
+
+a.class-link, a.dropdown{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}
+
+
+@media screen and (max-width: 992px) {
+    ul.topnav li a.class-link{
+        display: none;
+    }
+
+    a.dropdown{
+        color: white !important;
+    }
+
+    ul.topnav.responsive li.dropdown{
+        position: absolute;
+
+    }
+
+    ul.topnav.responsive{
+        flex-direction: column;
+        text-align: right;
+    }
+
+    ul.topnav li{
+        position: relative;
+        list-style: none;        
+    }
+
+    ul.topnav.responsive li{
+        position: relative;
+        list-style: none;        
+    }
+
+    ul.topnav.responsive li a{
+        display: block;
+        list-style: none;
+        line-height: 2;
+    }
+ 
+  }
+
 .timer{
     font-size: 5em;
     font-weight:initial;

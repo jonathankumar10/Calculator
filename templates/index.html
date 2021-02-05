@@ -3,7 +3,6 @@
 
 <head>
     <title>Calculator</title>
-    <link rel="stylesheet" href="../css/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -13,18 +12,22 @@
 </head>
 
 <body>
-    <h1 id="title">Calculator</h1>
+    <div>
+        <h1 id="title">Calculator</h1>
+    </div>
+
     <div class="main_page_back">
 
         <div uk-filter="target: .js-filter">
             <ul class="js-filter uk-child-width-1-2 uk-child-width-1-3@m uk-text-center" id="indexmenu" uk-grid>
                 <li>
-                    <a class="uk-card uk-card-default uk-card-body" href="./percentagecalc.html">Percentage
+                    <a class="uk-card uk-card-default uk-card-body cards" href="./percentagecalc.html">Percentage
                         Calculator</a>
                 </li>
-                <li><a class="uk-card uk-card-default uk-card-body" href="./simplecalc.html">Simple Calculator</a></li>
-                <li><a class="uk-card uk-card-default uk-card-body" href="./stopwatch.html">Stop Watch</a></li>
-                <li><a class="uk-card uk-card-default uk-card-body" href="./tempconverter.html">Temperature
+                <li><a class="uk-card uk-card-default uk-card-body cards" href="./simplecalc.html">Simple Calculator</a>
+                </li>
+                <li><a class="uk-card uk-card-default uk-card-body cards" href="./stopwatch.html">Stop Watch</a></li>
+                <li><a class="uk-card uk-card-default uk-card-body cards" href="./tempconverter.html">Temperature
                         Converter</a>
                 </li>
             </ul>
@@ -32,6 +35,8 @@
         </div>
     </div>
 
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>

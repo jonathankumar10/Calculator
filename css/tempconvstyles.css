@@ -6,11 +6,37 @@
 
 body{
     background-color: grey;
-    background-image: linear-gradient(white, black);
+    background-image: linear-gradient(rgb(15, 17, 22), rgb(255, 255, 255));
 }
 
+nav.navbar{
+    margin: 0 auto;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+ul.topnav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between ;
+}
+
+ul.topnav li{
+    list-style: none;        
+}
+
+a.class-link, a.dropdown{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}
+
+
+
+
 h1#title{
-    /* color: white; */
+    color: white;
     position: relative;
     font-size: 50px;
     text-align: center;
@@ -76,3 +102,55 @@ input[type = number]{
 .menu{
     padding-left: 25%;
 }
+
+@media screen and (max-width: 992px) {
+    ul.topnav li a.class-link{
+        display: none;
+    }
+
+    a.dropdown{
+        color: white !important;
+    }
+
+    ul.topnav.responsive li.dropdown{
+        position: absolute;
+
+    }
+
+    ul.topnav.responsive{
+        flex-direction: column;
+        text-align: right;
+    }
+
+    ul.topnav li{
+        position: relative;
+        list-style: none;        
+    }
+
+    ul.topnav.responsive li{
+        position: relative;
+        list-style: none;        
+    }
+
+    ul.topnav.responsive li a{
+        display: block;
+        list-style: none;
+        line-height: 2;
+    }
+
+    .right{
+        width: 30%;
+        height: 90%;
+        text-align: center;
+        font-size: 70px; 
+        background-color: black;
+        color:  rgb(43, 43, 43);
+    }
+    
+    .left{
+        width: 70%;
+        height: 90%;
+        font-size: xx-small;
+    }
+ 
+  }
