@@ -7,3 +7,6 @@ It consists of a percentage calculator, temperature converter, simple calculator
 
 
 The _redirects file is used for deploying the webapp on netlify as index.html is not present in the root directory but in templates diectory.
+
+HTML, CSS and JavaScript was used for the implementation of this static website.
+This website has also been made responsive i.e. mobile friendly.
